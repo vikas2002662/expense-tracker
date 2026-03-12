@@ -1,0 +1,14 @@
+# React
+node_modules
+build
+
+# Spring Boot
+target
+*.log
+
+# IDE files
+.vscode
+.idea
+.settings
+.project
+.classpath
