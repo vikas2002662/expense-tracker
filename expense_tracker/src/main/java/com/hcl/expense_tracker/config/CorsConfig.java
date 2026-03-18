@@ -17,9 +17,8 @@ public class CorsConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(List.of(
-                "http://localhost:3000", // local
-                "https://expense-tracker-4-21v4.onrender.com/" // deployed frontend
-        ));
+                "http://localhost:3000",
+                "https://expense-tracker-4-21v4.onrender.com"));
 
         configuration.setAllowedMethods(List.of(
                 "GET",
@@ -32,7 +31,6 @@ public class CorsConfig {
         configuration.setAllowCredentials(true);
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-
         source.registerCorsConfiguration("/**", configuration);
 
         return source;
